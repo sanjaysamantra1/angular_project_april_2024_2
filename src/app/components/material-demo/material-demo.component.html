@@ -1,0 +1,35 @@
+<p>material-demo works!</p>
+
+<section>
+    <div class="example-label">Raised</div>
+    <div class="example-button-row">
+        <button mat-raised-button>Basic</button>
+        <button mat-raised-button disabled>Disabled</button>
+        <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+</section>
+<mat-divider></mat-divider>
+<section>
+    <div class="example-label">Basic</div>
+    <div class="example-button-row">
+        <button mat-button>Basic</button>
+        <button mat-flat-button disabled>Disabled</button>
+        <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+</section>
+<mat-divider></mat-divider>
+<app-my-card></app-my-card>
+<mat-divider></mat-divider>
+<mat-form-field>
+    <mat-label>Enter a date range</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+        <input matStartDate placeholder="Start date">
+        <input matEndDate placeholder="End date">
+    </mat-date-range-input>
+    <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+</mat-form-field>
+<mat-divider></mat-divider>
+<h1>Please click below button to open the dialog</h1>
+<button mat-button (click)="openDialog()">Open dialog</button>
