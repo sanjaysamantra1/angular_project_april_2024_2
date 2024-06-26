@@ -8,6 +8,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { RegistrationFormComponent } from '../registration-form/registration-form.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @Component({
   selector: 'app-material-demo',
@@ -19,6 +22,8 @@ import { RegistrationFormComponent } from '../registration-form/registration-for
     MyCardComponent,
     MatDatepickerModule,
     MatFormFieldModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule
   ],
   providers: [provideNativeDateAdapter()],
   templateUrl: './material-demo.component.html',

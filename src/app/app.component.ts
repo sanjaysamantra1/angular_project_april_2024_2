@@ -1,19 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MaterialDemoComponent } from './components/material-demo/material-demo.component';
+import { ElementsTableComponent } from './components/elements-table/elements-table.component';
+import { TabContainerComponent } from './components/tab-container/tab-container.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,MaterialDemoComponent],
+  imports: [
+    RouterOutlet,
+    MaterialDemoComponent,
+    ElementsTableComponent,
+    TabContainerComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular_project_april_2024_2'; 
+  title = 'angular_project_april_2024_2';
 
-  arr1 = [10,20];
-  arr2 = [10,20];
+  arr1 = [10, 20];
+  arr2 = [10, 20];
 
   add(a: any, b: any) {
     return a + b;
