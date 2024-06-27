@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { MaterialDemoComponent } from './components/material-demo/material-demo.component';
 import { ElementsTableComponent } from './components/elements-table/elements-table.component';
 import { TabContainerComponent } from './components/tab-container/tab-container.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { AddTodoComponent } from './components/add-todo/add-todo.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,9 @@ import { TabContainerComponent } from './components/tab-container/tab-container.
     RouterOutlet,
     MaterialDemoComponent,
     ElementsTableComponent,
-    TabContainerComponent
+    TabContainerComponent,
+    TodoListComponent,
+    AddTodoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
